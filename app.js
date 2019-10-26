@@ -19,12 +19,24 @@ function day1AM() {
     console.log("Hello World");
     var fullName = "Courtney Magner";
     var age = 25; 
-    var heightInInches = 60;
+    var heightInInches = 63;
     var address = "123 main st";
-    console.log(typeof(firstname));
+    // console.log(typeof(firstname));
     var likesPizza = true;
     var hasTattos = false;
-    console.log(typeof(likesPizza));
+    // console.log(typeof(likesPizza));
+  
+    age = age+1;
+    console.log(age);
+    age ++;
+    age += 1;
+    console.log(age);
+
+    console.log(fullName + " is " + age + " years old.")
+    console.log("Do you like Pizza? " + likesPizza)
+    var feet = Math.floor(heightInInches/12);
+    var inches = heightInInches % 12;
+    console.log(fullName + " is " + feet + " foot " + inches + " inches tall");
 }
 
 day1AM(); 
