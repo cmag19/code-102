@@ -14,3 +14,17 @@ function draw() {
     strokeWeight(2);
     line(0, 45, 640, 45);
 }
+
+function day1AM() {
+    console.log("Hello World");
+    var fullName = "Courtney Magner";
+    var age = 25; 
+    var heightInInches = 60;
+    var address = "123 main st";
+    console.log(typeof(firstname));
+    var likesPizza = true;
+    var hasTattos = false;
+    console.log(typeof(likesPizza));
+}
+
+day1AM(); 
