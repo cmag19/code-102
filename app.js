@@ -21,10 +21,10 @@ function day1AM() {
     var age = 25; 
     var heightInInches = 63;
     var address = "123 main st";
-    // console.log(typeof(firstname));
+    console.log(typeof(firstname));
     var likesPizza = true;
     var hasTattos = false;
-    // console.log(typeof(likesPizza));
+    console.log(typeof(likesPizza));
   
     age = age+1;
     console.log(age);
@@ -36,7 +36,25 @@ function day1AM() {
     console.log("Do you like Pizza? " + likesPizza)
     var feet = Math.floor(heightInInches/12);
     var inches = heightInInches % 12;
-    console.log(fullName + " is " + feet + " foot " + inches + " inches tall");
+    //console.log(fullName + " is " + feet + " foot " + inches + " inches tall");
+    
+    print("Hello World");
+    var convertedTemp = f2c(212);
+    print(convertedTemp);
 }
 
 day1AM(); 
+function print(input) {
+    console.log(input);   
+}
+
+//converts Fahrenheit to Celsius 
+//input: tempurate in fahrenheit
+function f2c(t) {
+    return((t - 32)*5/9);
+
+}
+
+
+    
+
