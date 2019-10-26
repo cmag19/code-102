@@ -15,10 +15,10 @@ function draw() {
     line(0, 45, 640, 45);
 }
 
+var age = 20;
 function day1AM() {
     console.log("Hello World");
     var fullName = "Courtney Magner";
-    var age = 25; 
     var heightInInches = 63;
     var address = "123 main st";
     console.log(typeof(firstname));
@@ -38,12 +38,21 @@ function day1AM() {
     var inches = heightInInches % 12;
     //console.log(fullName + " is " + feet + " foot " + inches + " inches tall");
     
+   
+}
+
+function day1PM(){
     print("Hello World");
     var convertedTemp = f2c(212);
     print(convertedTemp);
-}
+    print(canIGoToTheCasino(age, "IA"));
+    age = 19;
+    print(canIGoToTheCasino(age, "IA"));
+    print(canIGoToTheCasino(age, "MN"));
 
+}
 day1AM(); 
+day1PM(); 
 function print(input) {
     console.log(input);   
 }
@@ -52,6 +61,12 @@ function print(input) {
 //input: tempurate in fahrenheit
 function f2c(t) {
     return((t - 32)*5/9);
+
+}
+
+function canIGoToTheCasino(age, location){
+    return age >=21 && location == "IA" || age >= 18 && location == "MN"; 
+
 
 }
 
