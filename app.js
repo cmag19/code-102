@@ -49,6 +49,9 @@ function day1PM(){
     age = 19;
     print(canIGoToTheCasino(age, "IA"));
     print(canIGoToTheCasino(age, "MN"));
+    print(whatToWear(90));    
+    print(whatToWear(60)); 
+    print(whatToWear(0)); 
 
 }
 day1AM(); 
@@ -66,10 +69,20 @@ function f2c(t) {
 
 function canIGoToTheCasino(age, location){
     return age >=21 && location == "IA" || age >= 18 && location == "MN"; 
-
-
 }
 
+function whatToWear (temp){
+    if(temp >= 75){
+        return "Swim Wear";
+    } else if(temp >= 45) {
+        return "Jacket or hoodie";}
+    else if(temp >= 10) {
+        return "Winter Coat"
+    }
+    else {
+        return "Don't Go Outside"
+    }
 
+}
     
 
