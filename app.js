@@ -119,14 +119,43 @@ for(var i = 0; i < months.length; i++){
 var states = ['Alabama','Alaska','American Samoa','Arizona','Arkansas','California','Colorado','Connecticut','Delaware','District of Columbia','Federated States of Micronesia','Florida','Georgia','Guam','Hawaii','Idaho','Illinois','Indiana','Iowa','Kansas','Kentucky','Louisiana','Maine','Marshall Islands','Maryland','Massachusetts','Michigan','Minnesota','Mississippi','Missouri','Montana','Nebraska','Nevada','New Hampshire','New Jersey','New Mexico','New York','North Carolina','North Dakota','Northern Mariana Islands','Ohio','Oklahoma','Oregon','Palau','Pennsylvania','Puerto Rico','Rhode Island','South Carolina','South Dakota','Tennessee','Texas','Utah','Vermont','Virgin Island','Virginia','Washington','West Virginia','Wisconsin','Wyoming'];
 
 states.forEach(function(state){
-    print(state); 
+    print(state);i 
 });
 
 
 
    
 }
-
-
 day2AM();
 
+function day2PM (){
+    var courtney = {
+        firstName: "Courtney",
+        middleName: "Beth",
+        lastName: "Magner", 
+        dob: [11,1,1994], // month, day, year
+        likesPizza: true,
+        heightInInches: 63,
+        fullName: function () {
+            return this.firstName + ' ' + this.middleName + ' ' + this.lastName;
+        },
+        age: function() {
+            var today = new Date(); // new Date is built in function that pulls in the date
+            var year = today.getFullYear();
+            var month = today.getMonth() +1; // getMonth will result in 0 for Jan, 1 for Feb, ect. Adding 1 add the end to match numbers we know
+            var day = today.getDate(); 
+            var myAge = year - this.dob[2];
+            if (month < this.dob[0] || month === this.dob[0] && day < this.dob[1]){
+                myAge--;
+            }
+            return (myAge);
+        },
+    };
+
+    print(courtney.firstName);
+    print(courtney.fullName());
+    print(courtney.age());
+
+}
+
+day2PM ();
