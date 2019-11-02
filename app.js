@@ -54,8 +54,8 @@ function day1PM(){
     print(whatToWear(0)); 
 
 }
-day1AM(); 
-day1PM(); 
+// day1AM(); 
+// day1PM(); 
 function print(input) {
     console.log(input);   
 }
@@ -85,4 +85,27 @@ function whatToWear (temp){
 
 }
     
+
+function day2AM (){
+    
+
+   var sum = 0;
+   var count = 0;
+
+   while (true) {
+
+    var input = parseInt(prompt('Enter a number. Type 0 to end.'));
+    if (input === 0) {
+        break;
+    } else {
+        sum += input;
+        count++;
+    }
+  }
+  console.log('The average of your numbers is ' + sum/count);
+
+}
+
+
+day2AM();
 
